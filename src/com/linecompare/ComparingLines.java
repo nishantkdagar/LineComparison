@@ -1,7 +1,7 @@
 package com.linecompare;
 
 import java.util.Scanner;
-import java.lang.Math;
+import java.lang.*;
 
 public class ComparingLines {
     public static void main(String[] args){
@@ -16,7 +16,25 @@ public class ComparingLines {
         Integer x2 = scanner.nextInt();
         System.out.println("Enter Y2:");
         Integer y2 = scanner.nextInt();
-        double lengthL1 = Math.sqrt(((x2-x1)*(x2-x1))+(y2-y1)*(y2-y1));
+        Double lengthL1 = Math.sqrt(((x2-x1)*(x2-x1))+(y2-y1)*(y2-y1));
         System.out.println("Length of Line L1 is : "+lengthL1);
+        System.out.println("Please Enter Coordinates for Line 2.");
+        System.out.println("Enter X3:");
+        Integer x3 = scanner.nextInt();
+        System.out.println("Enter Y3:");
+        Integer y3 = scanner.nextInt();
+        System.out.println("Enter X4:");
+        Integer x4 = scanner.nextInt();
+        System.out.println("Enter Y4:");
+        Integer y4 = scanner.nextInt();
+        Double lengthL2 = Math.sqrt(((x4-x3)*(x4-x3))+(y4-y3)*(y4-y3));
+        System.out.println("Length of Line L2 is : "+lengthL2);
+        boolean result = lengthL1.equals(lengthL2);
+        if(result){
+            System.out.println("Both Lines are Equal");
+        }
+        else {
+            System.out.println("Lines aren't Equal");
+        }
     }
 }
