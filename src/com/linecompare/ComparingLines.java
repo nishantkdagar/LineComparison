@@ -4,7 +4,8 @@ import java.util.Scanner;
 import java.lang.*;
 
 public class ComparingLines {
-    public static void main(String[] args){
+
+    public static void lineComparision(){
         System.out.println("Welcome to Line Comparison Computation Program");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please Enter Coordinates for Line 1.");
@@ -42,5 +43,8 @@ public class ComparingLines {
             System.out.println("Line 2 is Larger");
             System.out.println("Line 1 is Smaller");
         }
+    }
+    public static void main(String[] args){
+        lineComparision();
     }
 }
